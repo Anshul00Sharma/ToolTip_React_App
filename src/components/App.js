@@ -1,13 +1,15 @@
-import { useState, useEffect } from "react";
+// importing useState for state managment
+import { useState } from "react";
+
+//  importing components
 import PositionInput from "./PositionInput";
 import HoverButton from "./HoverButton";
 
 function App() {
+  // postion state for getting and seting the postion of tooltip
   const [position, setPosition] = useState("");
-  useEffect(() => {
-    console.log("position Changed");
-  }, [position]);
 
+  // handling submit button of postionInput component
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!position) return;
@@ -16,6 +18,7 @@ function App() {
   };
 
   return (
+    // imported components are added here with props
     <div className="App">
       <PositionInput
         position={position}

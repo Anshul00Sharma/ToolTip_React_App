@@ -1,10 +1,12 @@
-import React from "react";
+// importing bootstrap components
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import Badge from "react-bootstrap/Badge";
 
+// hoverButoon component with position props
 const HoverButton = ({ position }) => {
   return (
+    // hover button with bootstrap tooltip
     <>
       <OverlayTrigger
         style={{ overflow: "hidden" }}
